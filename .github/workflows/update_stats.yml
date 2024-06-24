@@ -23,5 +23,5 @@ jobs:
 
     - name: Run update script
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.QUEST_TOKEN }}
       run: python update_stats.py
