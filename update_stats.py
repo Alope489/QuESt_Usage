@@ -71,19 +71,15 @@ def get_repo_traffic(repo_owner, repo_name, access_token):
     return traffic_data
 
 def save_to_json(data, filename):
-    with open(filename, 'w') as f:
-        json.dump(data, f, indent=4)
-
-def load_from_json(filename):
     if os.path.exists(filename):
         with open(filename, 'r') as f:
-            return json.load(f)
-    return {}
+            existing_data = json.load(f)
+        existing_data.extend(data)
+    else:
+        existing_data = data
 
-def update_json(data, filename):
-    existing_data = load_from_json(filename)
-    existing_data.update(data)
-    save_to_json(existing_data, filename)
+    with open(filename, 'w') as f:
+        json.dump(existing_data, f, indent=4)
 
 def main():
     repo_owner = "sandialabs"
@@ -94,7 +90,9 @@ def main():
         save_to_json(download_stats, "downloads.json")
         
         traffic_stats = get_repo_traffic(repo_owner, repo_name, access_token)
-        save_to_json(traffic_stats, "traffic.json")
+        save_to_json(traffic_stats["clones"], "clones.json")
+        save_to_json(traffic_stats["referrers"], "referrers.json")
+        save_to_json(traffic_stats["paths"], "paths.json")
         
         logging.info("Script ran successfully.")
     except Exception as e:
@@ -102,3 +100,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
