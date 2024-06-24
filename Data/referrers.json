@@ -1,0 +1,65 @@
+[
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "sandia.gov",
+        "count": 91,
+        "uniques": 16
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "Google",
+        "count": 73,
+        "uniques": 34
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "github.com",
+        "count": 71,
+        "uniques": 12
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "u-cursos.cl",
+        "count": 31,
+        "uniques": 2
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "linkedin.com",
+        "count": 1,
+        "uniques": 1
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "yandex.ru",
+        "count": 1,
+        "uniques": 1
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "opensustain.tech",
+        "count": 1,
+        "uniques": 1
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "Bing",
+        "count": 1,
+        "uniques": 1
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "referrer": "energy.gov",
+        "count": 1,
+        "uniques": 1
+    }
+]

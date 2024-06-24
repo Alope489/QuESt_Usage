@@ -1,0 +1,82 @@
+[
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest",
+        "title": "sandialabs/snl-quest: An open source, Python-based software platform for ener...",
+        "count": 98,
+        "uniques": 68
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager",
+        "title": "snl-quest/snl_libraries/data_manager/es_gui/apps/data_manager at master \u00b7 san...",
+        "count": 17,
+        "uniques": 1
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/issues/30",
+        "title": "[CRITICAL] [Window ] Unable to find any valuable Window provider \u00b7 Issue #30 ...",
+        "count": 12,
+        "uniques": 11
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/blob/master/main.py",
+        "title": "snl-quest/main.py at master \u00b7 sandialabs/snl-quest \u00b7 GitHub",
+        "count": 12,
+        "uniques": 4
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/tree/master/__pycache__",
+        "title": "snl-quest/__pycache__ at master \u00b7 sandialabs/snl-quest \u00b7 GitHub",
+        "count": 11,
+        "uniques": 2
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/tree/master/docs",
+        "title": "snl-quest/docs at master \u00b7 sandialabs/snl-quest \u00b7 GitHub",
+        "count": 10,
+        "uniques": 2
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/issues/48",
+        "title": "TypeError: Cannot create graphics instruction outside the main Kivy thread \u00b7 ...",
+        "count": 9,
+        "uniques": 5
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager/_static",
+        "title": "snl-quest/snl_libraries/data_manager/es_gui/apps/data_manager/_static at mast...",
+        "count": 9,
+        "uniques": 1
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/tree/master",
+        "title": "snl-quest/ at master \u00b7 sandialabs/snl-quest \u00b7 GitHub",
+        "count": 8,
+        "uniques": 6
+    },
+    {
+        "timestamp_start": "2024-06-10",
+        "timestamp_end": "2024-06-24",
+        "path": "/sandialabs/snl-quest/blob/master/README.md",
+        "title": "snl-quest/README.md at master \u00b7 sandialabs/snl-quest \u00b7 GitHub",
+        "count": 8,
+        "uniques": 3
+    }
+]
