@@ -38,13 +38,14 @@ def aggregate_data(new_data, existing_data, key_field, count_field, unique_field
     return list(existing_dict.values())
 
 def save_aggregated_data(data, filename):
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, 'w') as f:
         json.dump(data, f, indent=4)
 
 def main():
     repo_owner = "sandialabs"
     repo_name = "snl-quest"
-    access_token = "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"
+    access_token = os.getenv('GITHUB_TOKEN')
 
     try:
         # Pull data from GitHub API
@@ -55,16 +56,16 @@ def main():
         paths_data = paths_response if isinstance(paths_response, list) else paths_response.get('paths', [])
 
         # Load existing aggregated data
-        aggregated_referrers = load_json("aggregated_referrers.json")
-        aggregated_paths = load_json("aggregated_paths.json")
+        aggregated_referrers = load_json("data/aggregated_referrers.json")
+        aggregated_paths = load_json("data/aggregated_paths.json")
 
         # Aggregate new data with existing data
         aggregated_referrers = aggregate_data(referrers_data, aggregated_referrers, "referrer", "count", "uniques")
         aggregated_paths = aggregate_data(paths_data, aggregated_paths, "path", "count", "uniques")
 
         # Save updated aggregated data
-        save_aggregated_data(aggregated_referrers, "aggregated_referrers.json")
-        save_aggregated_data(aggregated_paths, "aggregated_paths.json")
+        save_aggregated_data(aggregated_referrers, "data/aggregated_referrers.json")
+        save_aggregated_data(aggregated_paths, "data/aggregated_paths.json")
 
         logging.info("Aggregation script ran successfully.")
     except Exception as e:
@@ -72,6 +73,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
