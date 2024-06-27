@@ -25,3 +25,20 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.QUEST_TOKEN }}
       run: python update_stats.py
+
+    - name: Configure Git
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+
+    - name: Commit changes
+      run: |
+        git add data/downloads.json data/clones.json
+        git commit -m "Update JSON files"
+
+    - name: Push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git push
+
