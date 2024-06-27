@@ -50,15 +50,18 @@ def get_repo_traffic(repo_owner, repo_name, access_token):
     return clones_data
 
 def save_to_json(data, filename):
-    if os.path.exists(filename):
-        with open(filename, 'r') as f:
+    file_path = os.path.join('data', filename)
+
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
             existing_data = json.load(f)
         existing_data.extend(data)
     else:
         existing_data = data
 
-    with open(filename, 'w') as f:
+    with open(file_path, 'w') as f:
         json.dump(existing_data, f, indent=4)
+
 
 def main():
     repo_owner = "sandialabs"
@@ -77,4 +80,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
