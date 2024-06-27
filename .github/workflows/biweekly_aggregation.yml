@@ -23,7 +23,7 @@ jobs:
 
     - name: Run aggregation script
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.QUEST_TOKEN }}
       run: python aggregate_stats.py
 
     - name: Configure Git
