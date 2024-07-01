@@ -50,6 +50,10 @@ def get_repo_traffic(repo_owner, repo_name, access_token):
     return clones_data
 
 def save_to_json(data, filename):
+    # Ensure the directory exists
+    if not os.path.exists('data'):
+        os.makedirs('data')
+
     file_path = os.path.join('data', filename)
 
     if os.path.exists(file_path):
@@ -62,11 +66,10 @@ def save_to_json(data, filename):
     with open(file_path, 'w') as f:
         json.dump(existing_data, f, indent=4)
 
-
 def main():
     repo_owner = "sandialabs"
     repo_name = "snl-quest"
-    access_token = os.getenv("QUEST_TOKEN")
+    access_token = os.getenv('QUEST_TOKEN')
     try:
         download_stats = get_github_downloads(repo_owner, repo_name, access_token)
         save_to_json(download_stats, "downloads.json")
