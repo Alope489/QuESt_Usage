@@ -59,12 +59,15 @@ def save_to_json(data, filename):
     if os.path.exists(file_path):
         with open(file_path, 'r') as f:
             existing_data = json.load(f)
-        existing_data.extend(data)
     else:
-        existing_data = data
+        existing_data = []
+
+    # Merge new data with existing data, avoiding duplicates
+    merged_data = {json.dumps(entry, sort_keys=True): entry for entry in existing_data + data}
+    merged_data = list(merged_data.values())
 
     with open(file_path, 'w') as f:
-        json.dump(existing_data, f, indent=4)
+        json.dump(merged_data, f, indent=4)
 
 def main():
     repo_owner = "sandialabs"
@@ -83,3 +86,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
