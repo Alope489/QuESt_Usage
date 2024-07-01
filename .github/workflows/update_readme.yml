@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *' # Run daily at midnight
+    - cron: '*/10 * * * *'  # Runs every 10 minutes
 
 jobs:
   update-readme:
@@ -40,7 +40,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add README.md
+          git add README.md plots/clones_plot.png plots/downloads_table.md plots/paths_table.md plots/referrers_table.md
           git commit -m "Update README with latest data"
           git push
         env:
