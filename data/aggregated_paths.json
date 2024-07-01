@@ -1,18 +1,18 @@
 [
     {
         "path": "/sandialabs/snl-quest",
-        "count": 229,
-        "uniques": 141
+        "count": 361,
+        "uniques": 211
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager",
-        "count": 34,
-        "uniques": 2
+        "count": 51,
+        "uniques": 3
     },
     {
         "path": "/sandialabs/snl-quest/issues/30",
-        "count": 24,
-        "uniques": 22
+        "count": 36,
+        "uniques": 32
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/main.py",
@@ -21,8 +21,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/__pycache__",
-        "count": 26,
-        "uniques": 5
+        "count": 41,
+        "uniques": 8
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/docs",
@@ -41,8 +41,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master",
-        "count": 20,
-        "uniques": 13
+        "count": 35,
+        "uniques": 18
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/README.md",
@@ -51,13 +51,13 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries",
-        "count": 18,
-        "uniques": 5
+        "count": 37,
+        "uniques": 10
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/resources_rc.py",
-        "count": 11,
-        "uniques": 3
+        "count": 22,
+        "uniques": 6
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/setup.py",
@@ -66,7 +66,17 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/data",
-        "count": 9,
-        "uniques": 3
+        "count": 22,
+        "uniques": 8
+    },
+    {
+        "path": "/sandialabs/snl-quest/tree/master/app",
+        "count": 13,
+        "uniques": 6
+    },
+    {
+        "path": "/sandialabs/snl-quest/blob/master/images/read/home_page.png",
+        "count": 11,
+        "uniques": 4
     }
 ]
