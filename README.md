@@ -7,32 +7,20 @@ It provides tables and charts for the visits and the totals.
 ## Data Plots
 
 ![Plot 1](plot1.png) <!-- plot1_placeholder -->
-| Timestamp            |   Number of Clones |   Unique Clone Attempts |
-|:---------------------|-------------------:|------------------------:|
-| 2024-05-23T00:00:00Z |                  3 |                       1 |
-| 2024-05-24T00:00:00Z |                  1 |                       1 |
-| 2024-05-27T00:00:00Z |                  1 |                       1 |
-| 2024-05-29T00:00:00Z |                  4 |                       2 |
-| 2024-05-31T00:00:00Z |                  1 |                       1 |
-| 2024-06-02T00:00:00Z |                  1 |                       1 |
-| 2024-06-05T00:00:00Z |                  1 |                       1 |
-| 2024-06-08T00:00:00Z |                  2 |                       2 |
-| 2024-06-10T00:00:00Z |                  4 |                       3 |
-| 2024-06-11T00:00:00Z |                  2 |                       2 |
-| 2024-06-12T00:00:00Z |                  3 |                       3 |
-| 2024-06-13T00:00:00Z |                  1 |                       1 |
-| 2024-06-18T00:00:00Z |                  4 |                       2 |
-| 2024-06-19T00:00:00Z |                  2 |                       2 |
-| 2024-06-21T00:00:00Z |                  1 |                       1 |
-| 2024-06-23T00:00:00Z |                  2 |                       2 |
-| 2024-06-13T00:00:00Z |                  1 |                       1 |
-| 2024-06-18T00:00:00Z |                  4 |                       2 |
-| 2024-06-19T00:00:00Z |                  2 |                       2 |
-| 2024-06-21T00:00:00Z |                  1 |                       1 |
-| 2024-06-23T00:00:00Z |                  2 |                       2 |
-| 2024-06-24T00:00:00Z |                  1 |                       1 |
-| 2024-06-26T00:00:00Z |                  1 |                       1 |
-| Total                |                 45 |                      36 |
+
 ![Plot 2](plot2.png) <!-- plot2_placeholder -->
 ![Plot 3](plot3.png) <!-- plot3_placeholder -->
 ![Plot 4](plot4.png) <!-- plot4_placeholder -->
+| Most Visited Path                                                                             |   Times Visited |   Unique Visits |
+|:----------------------------------------------------------------------------------------------|----------------:|----------------:|
+| /sandialabs/snl-quest                                                                         |              98 |              68 |
+| /sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager         |              17 |               1 |
+| /sandialabs/snl-quest/issues/30                                                               |              12 |              11 |
+| /sandialabs/snl-quest/blob/master/main.py                                                     |              12 |               4 |
+| /sandialabs/snl-quest/tree/master/__pycache__                                                 |              11 |               2 |
+| /sandialabs/snl-quest/tree/master/docs                                                        |              10 |               2 |
+| /sandialabs/snl-quest/issues/48                                                               |               9 |               5 |
+| /sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager/_static |               9 |               1 |
+| /sandialabs/snl-quest/tree/master                                                             |               8 |               6 |
+| /sandialabs/snl-quest/blob/master/README.md                                                   |               8 |               3 |
+| Total                                                                                         |             194 |             103 |
