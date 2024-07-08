@@ -2,7 +2,7 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    - cron: '*/1 * * * *' # Run every 10 minutes #- cron: '0 0 * * *' # Run daily at midnight
+    - cron: '*/10 * * * *' # Run every 10 minutes
   workflow_dispatch:
 
 jobs:
@@ -33,9 +33,7 @@ jobs:
       run: python update_stats.py
 
     - name: Run plots script
-      run: |
-        source venv/bin/activate
-        python plots.py
+      run: python plots.py
 
     - name: Configure Git
       run: |
@@ -55,5 +53,8 @@ jobs:
     - name: Push changes
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git push
+
       run: |
         git push
