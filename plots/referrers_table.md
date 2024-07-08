@@ -9,4 +9,4 @@
 | opensustain.tech |                     1 |                  1 |
 | Bing             |                    11 |                  2 |
 | energy.gov       |                     3 |                  3 |
-| Total            |                   830 |                196 |
+| nan              |                   830 |                196 |

@@ -16,4 +16,4 @@
 | /sandialabs/snl-quest/tree/master/data                                                        |              22 |               8 |
 | /sandialabs/snl-quest/tree/master/app                                                         |              13 |               6 |
 | /sandialabs/snl-quest/blob/master/images/read/home_page.png                                   |              11 |               4 |
-| Total                                                                                         |             696 |             328 |
+| nan                                                                                           |             696 |             328 |

@@ -17,7 +17,7 @@ It provides tables and charts for the visits and the totals and updates the read
 | snl-quest-1.2.e-win10.zip     |              196 |
 | snl-quest-1.2.d-win10.zip     |              107 |
 | snl-quest-1.2.c-win10.zip     |               85 |
-| Total                         |             1565 |
+| nan                           |             1565 |
 ## Most Visited Paths
 | Most Visited Path                                                                             |   Times Visited |   Unique Visits |
 |:----------------------------------------------------------------------------------------------|----------------:|----------------:|
@@ -37,7 +37,7 @@ It provides tables and charts for the visits and the totals and updates the read
 | /sandialabs/snl-quest/tree/master/data                                                        |              22 |               8 |
 | /sandialabs/snl-quest/tree/master/app                                                         |              13 |               6 |
 | /sandialabs/snl-quest/blob/master/images/read/home_page.png                                   |              11 |               4 |
-| Total                                                                                         |             696 |             328 |
+| nan                                                                                           |             696 |             328 |
 ## Referrers
 | Referrer         |   Number of Referrals |   Unique Referrals |
 |:-----------------|----------------------:|-------------------:|
@@ -50,4 +50,4 @@ It provides tables and charts for the visits and the totals and updates the read
 | opensustain.tech |                     1 |                  1 |
 | Bing             |                    11 |                  2 |
 | energy.gov       |                     3 |                  3 |
-| Total            |                   830 |                196 |
+| nan              |                   830 |                196 |

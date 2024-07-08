@@ -8,4 +8,4 @@
 | snl-quest-1.2.e-win10.zip     |              196 |
 | snl-quest-1.2.d-win10.zip     |              107 |
 | snl-quest-1.2.c-win10.zip     |               85 |
-| Total                         |             1565 |
+| nan                           |             1565 |
