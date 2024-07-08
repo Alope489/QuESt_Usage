@@ -18,7 +18,7 @@ jobs:
         python-version: '3.8'
 
     - name: Install dependencies
-      run: pip install requests
+      run: pip install requests matplotlib pandas tabulate
 
     - name: Debug Environment Variables
       run: |
@@ -32,6 +32,11 @@ jobs:
         QUEST_TOKEN: ${{ secrets.QUEST_TOKEN }}
       run: python update_stats.py
 
+    - name: Run plots script
+      run: |
+        source venv/bin/activate
+        python plots.py
+
     - name: Configure Git
       run: |
         git config --global user.name 'github-actions'
@@ -39,10 +44,10 @@ jobs:
 
     - name: Commit changes
       run: |
-        git add data/*.json
+        git add data/*.json plots/*.png plots/*.md
         git status
         if ! git diff-index --quiet HEAD; then
-          git commit -m "Update JSON files"
+          git commit -m "Update JSON files and plots"
         else
           echo "No changes to commit"
         fi
@@ -52,3 +57,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git push
+
