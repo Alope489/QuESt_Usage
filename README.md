@@ -17,7 +17,7 @@ It provides tables and charts for the visits and the totals and updates the read
 | snl-quest-1.2.e-win10.zip     |              197 |
 | snl-quest-1.2.d-win10.zip     |              109 |
 | snl-quest-1.2.c-win10.zip     |               86 |
-| nan                           |             1583 |
+| Total                         |             1583 |
 ## Most Visited Paths
 | Most Visited Path                                                                             |   Times Visited |   Unique Visits |
 |:----------------------------------------------------------------------------------------------|----------------:|----------------:|
@@ -39,7 +39,7 @@ It provides tables and charts for the visits and the totals and updates the read
 | /sandialabs/snl-quest/blob/master/images/read/home_page.png                                   |              21 |               9 |
 | /sandialabs/snl-quest/tree/master/app/data_vis                                                |              10 |               2 |
 | /sandialabs/snl-quest/tree/master/app/tools                                                   |               9 |               3 |
-| nan                                                                                           |             966 |             455 |
+| Total                                                                                         |             966 |             455 |
 ## Referrers
 | Referrer                     |   Number of Referrals |   Unique Referrals |
 |:-----------------------------|----------------------:|-------------------:|
@@ -56,4 +56,4 @@ It provides tables and charts for the visits and the totals and updates the read
 | yandex.by                    |                     2 |                  1 |
 | DuckDuckGo                   |                     1 |                  1 |
 | puspalhazra.com              |                     1 |                  1 |
-| nan                          |                  1064 |                272 |
+| Total                        |                  1064 |                272 |
