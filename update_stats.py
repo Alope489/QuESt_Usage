@@ -3,6 +3,7 @@ import logging
 import json
 from datetime import datetime, timedelta
 import os
+import traceback
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -87,4 +88,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
