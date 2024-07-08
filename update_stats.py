@@ -48,6 +48,7 @@ def get_repo_traffic(repo_owner, repo_name, access_token):
         raise Exception(f"Failed to fetch clones data: {response_clones.status_code} - {response_clones.text}")
 
     clones_data = response_clones.json().get('clones', [])
+    logging.info(f"Fetched clones data: {clones_data}")
     return clones_data
 
 def save_to_json(data, filename):
@@ -67,8 +68,11 @@ def save_to_json(data, filename):
     merged_data = {json.dumps(entry, sort_keys=True): entry for entry in existing_data + data}
     merged_data = list(merged_data.values())
 
+    logging.info(f"Saving data to {filename}: {merged_data[:2]}...")  # Log the first two records for debugging
+
     with open(file_path, 'w') as f:
         json.dump(merged_data, f, indent=4)
+
 
 def main():
     repo_owner = "sandialabs"
