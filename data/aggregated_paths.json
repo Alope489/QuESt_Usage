@@ -1,8 +1,8 @@
 [
     {
         "path": "/sandialabs/snl-quest",
-        "count": 361,
-        "uniques": 211
+        "count": 499,
+        "uniques": 288
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager",
@@ -11,8 +11,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/issues/30",
-        "count": 36,
-        "uniques": 32
+        "count": 52,
+        "uniques": 44
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/main.py",
@@ -26,8 +26,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/docs",
-        "count": 10,
-        "uniques": 2
+        "count": 24,
+        "uniques": 7
     },
     {
         "path": "/sandialabs/snl-quest/issues/48",
@@ -41,8 +41,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master",
-        "count": 35,
-        "uniques": 18
+        "count": 52,
+        "uniques": 24
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/README.md",
@@ -51,8 +51,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries",
-        "count": 37,
-        "uniques": 10
+        "count": 52,
+        "uniques": 15
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/resources_rc.py",
@@ -66,17 +66,27 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/data",
-        "count": 22,
-        "uniques": 8
+        "count": 37,
+        "uniques": 14
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/app",
-        "count": 13,
-        "uniques": 6
+        "count": 39,
+        "uniques": 12
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/images/read/home_page.png",
-        "count": 11,
-        "uniques": 4
+        "count": 21,
+        "uniques": 9
+    },
+    {
+        "path": "/sandialabs/snl-quest/tree/master/app/data_vis",
+        "count": 10,
+        "uniques": 2
+    },
+    {
+        "path": "/sandialabs/snl-quest/tree/master/app/tools",
+        "count": 9,
+        "uniques": 3
     }
 ]
