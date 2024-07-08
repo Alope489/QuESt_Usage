@@ -72,15 +72,16 @@ def save_to_json(data, filename, key=None):
         existing_data_dict.update(data_dict)
         merged_data = list(existing_data_dict.values())
     else:
-        # For clones, merge by appending new records
-        merged_data = {json.dumps(entry, sort_keys=True): entry for entry in existing_data + data}
-        merged_data = list(merged_data.values())
+        # For clones, merge by updating entries with matching timestamps
+        existing_data_dict = {entry['timestamp']: entry for entry in existing_data}
+        for entry in data:
+            existing_data_dict[entry['timestamp']] = entry
+        merged_data = list(existing_data_dict.values())
 
     logger.info(f"Saving data to {filename}: {merged_data[:2]}...")
 
     with open(file_path, 'w') as f:
         json.dump(merged_data, f, indent=4)
-
 
 def main():
     repo_owner = "sandialabs"
@@ -88,7 +89,7 @@ def main():
     access_token = os.getenv("QUEST_TOKEN")
     try:
         download_stats = get_github_downloads(repo_owner, repo_name, access_token)
-        save_to_json(download_stats, "downloads.json")
+        save_to_json(download_stats, "downloads.json", key="asset_id")
 
         clones_data = get_repo_traffic(repo_owner, repo_name, access_token)
         save_to_json(clones_data, "clones.json")
