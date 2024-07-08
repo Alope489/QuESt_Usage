@@ -18,4 +18,4 @@
 | /sandialabs/snl-quest/blob/master/images/read/home_page.png                                   |              21 |               9 |
 | /sandialabs/snl-quest/tree/master/app/data_vis                                                |              10 |               2 |
 | /sandialabs/snl-quest/tree/master/app/tools                                                   |               9 |               3 |
-| nan                                                                                           |             966 |             455 |
+| Total                                                                                         |             966 |             455 |

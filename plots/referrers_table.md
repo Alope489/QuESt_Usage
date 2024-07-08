@@ -13,4 +13,4 @@
 | yandex.by                    |                     2 |                  1 |
 | DuckDuckGo                   |                     1 |                  1 |
 | puspalhazra.com              |                     1 |                  1 |
-| nan                          |                  1064 |                272 |
+| Total                        |                  1064 |                272 |
