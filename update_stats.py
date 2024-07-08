@@ -52,7 +52,7 @@ def get_repo_traffic(repo_owner, repo_name, access_token):
     logger.info(f"Fetched clones data: {clones_data}")
     return clones_data
 
-def save_to_json(data, filename):
+def save_to_json(data, filename, key=None):
     if not os.path.exists('data'):
         os.makedirs('data')
 
@@ -65,14 +65,22 @@ def save_to_json(data, filename):
     else:
         existing_data = []
 
-    # Merge new data with existing data, avoiding duplicates
-    merged_data = {json.dumps(entry, sort_keys=True): entry for entry in existing_data + data}
-    merged_data = list(merged_data.values())
+    if key:
+        # For downloads, update existing records based on a unique key
+        data_dict = {item[key]: item for item in data}
+        existing_data_dict = {item[key]: item for item in existing_data}
+        existing_data_dict.update(data_dict)
+        merged_data = list(existing_data_dict.values())
+    else:
+        # For clones, merge by appending new records
+        merged_data = {json.dumps(entry, sort_keys=True): entry for entry in existing_data + data}
+        merged_data = list(merged_data.values())
 
     logger.info(f"Saving data to {filename}: {merged_data[:2]}...")
 
     with open(file_path, 'w') as f:
         json.dump(merged_data, f, indent=4)
+
 
 def main():
     repo_owner = "sandialabs"
