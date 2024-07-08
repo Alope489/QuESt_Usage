@@ -63,23 +63,22 @@ def save_clones_plot(clones, output_dir):
     plt.savefig(os.path.join(output_dir, 'clones_plot.png'), bbox_inches='tight', pad_inches=0.01)  # Reduce padding
     plt.close()
 
-# Function to add totals row to a DataFrame
+# Function to add totals and uniques row to a DataFrame
 def add_totals_row(df, count_col, uniques_col):
     if df.empty:
         logger.warning(f"DataFrame is empty, cannot add totals row for columns: {count_col}, {uniques_col}")
         return df
-
     total_count = df[count_col].astype(int).sum()
-    total_uniques = df[uniques_col].astype(int).sum() if uniques_col else None
-
-    if uniques_col:
-        totals_row = pd.DataFrame({count_col: [total_count], uniques_col: [total_uniques]}, index=["Total"])
-    else:
-        totals_row = pd.DataFrame({count_col: [total_count]}, index=["Total"])
-
+    total_uniques = df[uniques_col].astype(int).sum()
+    totals_row = pd.DataFrame({count_col: [total_count], uniques_col: [total_uniques]})
+    totals_row.index = ["Total"]
     return pd.concat([df, totals_row])
 
-# Main function to generate markdown tables and plots
+# Function to convert DataFrame to markdown
+def dataframe_to_markdown(df):
+    return df.to_markdown(index=False, tablefmt="pipe")
+
+# Main function
 def main():
     # Load data from JSON files
     clones = load_json_data("clones.json")
@@ -114,7 +113,7 @@ def main():
     if not downloads_df.empty and 'asset_name' in downloads_df.columns and 'download_count' in downloads_df.columns:
         downloads_df = downloads_df[['asset_name', 'download_count']]
         downloads_df.columns = ["Asset Name", "Download Count"]
-        downloads_df = add_totals_row(downloads_df, "Download Count", None)
+        downloads_df = add_totals_row(downloads_df, "Download Count", "Download Count")
     else:
         logger.warning("Downloads data is missing expected columns or is empty")
 
@@ -139,4 +138,3 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
-
