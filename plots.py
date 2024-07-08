@@ -72,10 +72,12 @@ def add_totals_row(df, count_col, uniques_col):
     total_count = df[count_col].astype(int).sum()
     total_uniques = df[uniques_col].astype(int).sum() if uniques_col else None
 
-    totals_row = pd.Series({count_col: total_count, uniques_col: total_uniques}) if uniques_col else pd.Series({count_col: total_count})
-    totals_row.name = "Total"
+    if uniques_col:
+        totals_row = pd.DataFrame({count_col: [total_count], uniques_col: [total_uniques]}, index=["Total"])
+    else:
+        totals_row = pd.DataFrame({count_col: [total_count]}, index=["Total"])
 
-    return df.append(totals_row)
+    return pd.concat([df, totals_row])
 
 # Main function to generate markdown tables and plots
 def main():
