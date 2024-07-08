@@ -59,9 +59,13 @@ def save_to_json(data, filename, key=None):
     file_path = os.path.join('data', filename)
 
     if os.path.exists(file_path):
-        with open(file_path, 'r') as f:
-            existing_data = json.load(f)
-            logger.info(f"Existing data from {filename}: {existing_data[:2]}...")
+        try:
+            with open(file_path, 'r') as f:
+                existing_data = json.load(f)
+                logger.info(f"Existing data from {filename}: {existing_data[:2]}...")
+        except (json.JSONDecodeError, ValueError):
+            logger.error(f"Error reading {filename}, initializing as empty list.")
+            existing_data = []
     else:
         existing_data = []
 
@@ -82,6 +86,7 @@ def save_to_json(data, filename, key=None):
 
     with open(file_path, 'w') as f:
         json.dump(merged_data, f, indent=4)
+
 
 def main():
     repo_owner = "sandialabs"
