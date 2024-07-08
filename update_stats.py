@@ -72,7 +72,7 @@ def save_to_json(data, filename):
 def main():
     repo_owner = "sandialabs"
     repo_name = "snl-quest"
-    access_token = os.getenv('QUEST_TOKEN')
+    access_token = "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"
     try:
         download_stats = get_github_downloads(repo_owner, repo_name, access_token)
         save_to_json(download_stats, "downloads.json")
