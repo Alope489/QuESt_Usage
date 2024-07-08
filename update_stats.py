@@ -50,7 +50,7 @@ def get_repo_traffic(repo_owner, repo_name, access_token):
     clones_data = response_clones.json().get('clones', [])
     logging.info(f"Fetched clones data: {clones_data}")
     return clones_data
-
+    
 def save_to_json(data, filename):
     # Ensure the directory exists
     if not os.path.exists('data'):
@@ -61,6 +61,7 @@ def save_to_json(data, filename):
     if os.path.exists(file_path):
         with open(file_path, 'r') as f:
             existing_data = json.load(f)
+            logger.info(f"Existing data from {filename}: {existing_data[:2]}...")  # Log the first two records for debugging
     else:
         existing_data = []
 
@@ -68,10 +69,11 @@ def save_to_json(data, filename):
     merged_data = {json.dumps(entry, sort_keys=True): entry for entry in existing_data + data}
     merged_data = list(merged_data.values())
 
-    logging.info(f"Saving data to {filename}: {merged_data[:2]}...")  # Log the first two records for debugging
+    logger.info(f"Saving data to {filename}: {merged_data[:2]}...")  # Log the first two records for debugging
 
     with open(file_path, 'w') as f:
         json.dump(merged_data, f, indent=4)
+
 
 
 def main():
