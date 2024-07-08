@@ -72,7 +72,7 @@ def save_to_json(data, filename):
 def main():
     repo_owner = "sandialabs"
     repo_name = "snl-quest"
-    access_token = "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"
+    access_token = os.getenv("QUEST_TOKEN")
     try:
         download_stats = get_github_downloads(repo_owner, repo_name, access_token)
         save_to_json(download_stats, "downloads.json")
@@ -83,6 +83,10 @@ def main():
         logging.info("Script ran successfully.")
     except Exception as e:
         logging.error(f"Error occurred: {e}")
+        logging.error(f"Traceback: {traceback.format_exc()}")
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
