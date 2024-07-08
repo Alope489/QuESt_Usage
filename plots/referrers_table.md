@@ -1,12 +1,16 @@
-| Referrer         |   Number of Referrals |   Unique Referrals |
-|:-----------------|----------------------:|-------------------:|
-| sandia.gov       |                   304 |                 46 |
-| Google           |                   199 |                 93 |
-| github.com       |                   213 |                 39 |
-| u-cursos.cl      |                    93 |                  6 |
-| linkedin.com     |                     3 |                  3 |
-| yandex.ru        |                     3 |                  3 |
-| opensustain.tech |                     1 |                  1 |
-| Bing             |                    11 |                  2 |
-| energy.gov       |                     3 |                  3 |
-| nan              |                   830 |                196 |
+| Referrer                     |   Number of Referrals |   Unique Referrals |
+|:-----------------------------|----------------------:|-------------------:|
+| sandia.gov                   |                   342 |                 60 |
+| Google                       |                   309 |                129 |
+| github.com                   |                   276 |                 54 |
+| u-cursos.cl                  |                    94 |                  7 |
+| linkedin.com                 |                     3 |                  3 |
+| yandex.ru                    |                     3 |                  3 |
+| opensustain.tech             |                     2 |                  2 |
+| Bing                         |                    26 |                  6 |
+| energy.gov                   |                     3 |                  3 |
+| statics.teams.cdn.office.net |                     2 |                  2 |
+| yandex.by                    |                     2 |                  1 |
+| DuckDuckGo                   |                     1 |                  1 |
+| puspalhazra.com              |                     1 |                  1 |
+| nan                          |                  1064 |                272 |
