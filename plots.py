@@ -70,13 +70,9 @@ def add_totals_row(df, count_col, uniques_col):
         return df
     total_count = df[count_col].astype(int).sum()
     total_uniques = df[uniques_col].astype(int).sum()
-    # Adjust the number of columns dynamically
-    columns = list(df.columns)
-    totals_row = {columns[0]: ['Total']}
-    for i in range(1, len(columns)):
-        totals_row[columns[i]] = [''] if i < len(columns) - 2 else [total_count] if i == len(columns) - 2 else [total_uniques]
-    totals_df = pd.DataFrame(totals_row)
-    return pd.concat([df, totals_df], ignore_index=True)
+    totals_row = pd.DataFrame({count_col: [total_count], uniques_col: [total_uniques]})
+    totals_row.index = ["Total"]
+    return pd.concat([df, totals_row])
 
 # Function to convert DataFrame to markdown
 def dataframe_to_markdown(df):
