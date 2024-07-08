@@ -70,15 +70,16 @@ def add_totals_row(df, count_col, uniques_col=None):
         return df
 
     total_count = df[count_col].sum()
-    totals_data = {count_col: total_count}
+    totals_data = {count_col: [total_count]}
 
     if uniques_col:
         total_uniques = df[uniques_col].sum()
-        totals_data[uniques_col] = total_uniques
+        totals_data[uniques_col] = [total_uniques]
 
+    # Create totals row with proper label
     totals_row = pd.DataFrame(totals_data, index=["Total"])
     return pd.concat([df, totals_row])
-
+ 
 # Function to convert DataFrame to markdown
 def dataframe_to_markdown(df):
     return df.to_markdown(index=False, tablefmt="pipe")
