@@ -9,15 +9,15 @@ It provides tables and charts for the visits and the totals and updates the read
 ## Release Downloads
 | Asset Name                    |   Download Count |
 |:------------------------------|-----------------:|
-| quest_apps_prebuilt_win64.zip |                8 |
-| quest_installer_win64.exe     |               27 |
-| quest_prebuilt_win64.zip      |               21 |
+| quest_apps_prebuilt_win64.zip |                9 |
+| quest_installer_win64.exe     |               29 |
+| quest_prebuilt_win64.zip      |               22 |
 | QuESt.1.6-beta.zip            |              394 |
 | snl-quest-1.2.f-win10.zip     |              741 |
 | snl-quest-1.2.e-win10.zip     |              197 |
 | snl-quest-1.2.d-win10.zip     |              109 |
 | snl-quest-1.2.c-win10.zip     |               86 |
-| Total                         |             1583 |
+| Total                         |             1587 |
 ## Most Visited Paths
 | Most Visited Path                                                                             |   Times Visited |   Unique Visits |
 |:----------------------------------------------------------------------------------------------|----------------:|----------------:|
