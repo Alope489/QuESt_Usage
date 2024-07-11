@@ -11,6 +11,7 @@ shield_folder = os.path.join(script_dir, 'shields')
 clones_file_path = os.path.join(data_folder, 'clones.json')
 downloads_file_path = os.path.join(data_folder, 'downloads.json')
 output_file_path = os.path.join(shield_folder, 'badge_data.json')
+release_output_file_path = os.path.join(shield_folder, 'release_badge_data.json')
 
 # Ensure the data folder exists
 os.makedirs(data_folder, exist_ok=True)
@@ -55,7 +56,9 @@ else:
         print(f"Error reading {downloads_file_path}: {e}")
 
 # Fetch the latest release from the foreign repository
-GITHUB_API_URL = "https://api.github.com/repos/sandialabs/snl-quest/releases/latest"
+OWNER = "sandialabs"
+REPO = "snl-quest"
+GITHUB_API_URL = f"https://api.github.com/repos/{OWNER}/{REPO}/releases/latest"
 headers = {
     "Authorization": f"token {os.getenv('QUEST_TOKEN')}"
 }
@@ -65,9 +68,12 @@ try:
     response.raise_for_status()
     latest_release = response.json()
     latest_release_tag = latest_release["tag_name"]
-except Exception as e:
+except requests.exceptions.RequestException as e:
     latest_release_tag = "unknown"
     print(f"Error fetching latest release: {e}")
+except KeyError as e:
+    latest_release_tag = "unknown"
+    print(f"Key error in the response data: {e}")
 
 print(f'Total Clones: {total_clones}')
 print(f'Total Downloads: {total_downloads}')
@@ -100,7 +106,6 @@ except Exception as e:
     print(f"Error writing to {output_file_path}: {e}")
 
 # Write the release data to release_badge_data.json
-release_output_file_path = os.path.join(shield_folder, 'release_badge_data.json')
 try:
     with open(release_output_file_path, 'w') as output_file:
         json.dump(release_output_data, output_file)
