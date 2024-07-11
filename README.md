@@ -1,7 +1,7 @@
 # QuESt_Usage
 
 ![Downloaded](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/badge_data.json)
-![Latest Release](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/release_badge_data.json)
+![Latest Release](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/release_badge_data.json&cache_bust=${{ github.run_id }})
 
 A program used to update the README.md on the main quest github page and keep track of all of the clones, most visited paths, main referrers, and the downloads of the releases.
 It provides tables and charts for the visits and the totals and updates the readme daily.
