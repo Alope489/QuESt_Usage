@@ -55,7 +55,7 @@ else:
         print(f"Error reading {downloads_file_path}: {e}")
 
 # Fetch the latest release from the foreign repository
-GITHUB_API_URL = "https://api.github.com/repos/foreign-repo/sandialabs/snl-quest/latest"
+GITHUB_API_URL = "https://api.github.com/repos/sandialabs/snl-quest/releases/latest"
 headers = {
     "Authorization": f"token {os.getenv('QUEST_TOKEN')}"
 }
