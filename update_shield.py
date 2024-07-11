@@ -6,9 +6,10 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define the paths to the JSON files relative to the script's directory
 data_folder = os.path.join(script_dir, 'data')
+shield_folder = os.path.join(script_dir, 'shields')
 clones_file_path = os.path.join(data_folder, 'clones.json')
 downloads_file_path = os.path.join(data_folder, 'downloads.json')
-output_file_path = os.path.join(data_folder, 'badge_data.json')
+output_file_path = os.path.join(shield_folder, 'badge_data.json')
 
 # Ensure the data folder exists
 os.makedirs(data_folder, exist_ok=True)
