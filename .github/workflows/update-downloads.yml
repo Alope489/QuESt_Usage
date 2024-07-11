@@ -8,6 +8,8 @@ on:
 jobs:
   update-downloads:
     runs-on: ubuntu-latest
+    env:
+      QUEST_TOKEN: ${{ secrets.QUEST_TOKEN }}
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
@@ -31,7 +33,6 @@ jobs:
     - name: Push to Public Repo
       env:
         GITHUB_TOKEN: ${{ secrets.SHIELDS_TOKEN }}
-        QUEST_TOKEN: ${{ secrets.QUEST_TOKEN }}
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
@@ -39,7 +40,6 @@ jobs:
         cp shields/badge_data.json public-repo/
         cp shields/release_badge_data.json public-repo/
         cd public-repo
-        git add badge_data.json
-        git add release_badge_data.json
-        git commit -m "Update download statistics"
+        git add badge_data.json release_badge_data.json
+        git commit -m "Update download statistics and release information"
         git push origin main
