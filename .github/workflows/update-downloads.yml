@@ -29,11 +29,11 @@ jobs:
 
     - name: Push to Public Repo
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.SHIELDS_TOKEN }}
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alope489/shields.git public-repo
+        git clone https://x-access-token:${{ secrets.SHIELDS_TOKEN }}@github.com/Alope489/shields.git public-repo
         cp shields/badge_data.json public-repo/
         cd public-repo
         git add badge_data.json
