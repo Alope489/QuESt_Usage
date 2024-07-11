@@ -36,7 +36,9 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git clone https://x-access-token:${{ secrets.SHIELDS_TOKEN }}@github.com/Alope489/shields.git public-repo
         cp shields/badge_data.json public-repo/
+        cp shields/release_badge_data.json public-repo/
         cd public-repo
         git add badge_data.json
+        git add release_badge_data.json
         git commit -m "Update download statistics"
         git push origin main
