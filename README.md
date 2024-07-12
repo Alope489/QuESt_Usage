@@ -7,7 +7,7 @@
 ![Downloaded](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/badge_data.json)
 ![Latest Release](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/release_badge_data.json)
 
-## Clones Since June, 2024
+## Clones Since May 22, 2024
 <!-- PLOT_PLACEHOLDER_START -->
 ![Clones Plot](plots/clones_plot.png)
 <!-- PLOT_PLACEHOLDER_END -->
