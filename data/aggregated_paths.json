@@ -1,8 +1,8 @@
 [
     {
         "path": "/sandialabs/snl-quest",
-        "count": 499,
-        "uniques": 288
+        "count": 655,
+        "uniques": 360
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager",
@@ -11,8 +11,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/issues/30",
-        "count": 52,
-        "uniques": 44
+        "count": 69,
+        "uniques": 56
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/main.py",
@@ -26,8 +26,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/docs",
-        "count": 24,
-        "uniques": 7
+        "count": 43,
+        "uniques": 12
     },
     {
         "path": "/sandialabs/snl-quest/issues/48",
@@ -41,13 +41,13 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master",
-        "count": 52,
-        "uniques": 24
+        "count": 63,
+        "uniques": 30
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/README.md",
-        "count": 18,
-        "uniques": 7
+        "count": 42,
+        "uniques": 10
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries",
@@ -66,27 +66,32 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/data",
-        "count": 37,
-        "uniques": 14
+        "count": 48,
+        "uniques": 18
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/app",
-        "count": 39,
-        "uniques": 12
+        "count": 63,
+        "uniques": 17
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/images/read/home_page.png",
-        "count": 21,
-        "uniques": 9
+        "count": 30,
+        "uniques": 13
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/app/data_vis",
-        "count": 10,
-        "uniques": 2
+        "count": 20,
+        "uniques": 4
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/app/tools",
         "count": 9,
+        "uniques": 3
+    },
+    {
+        "path": "/sandialabs/snl-quest/tree/master/images",
+        "count": 12,
         "uniques": 3
     }
 ]

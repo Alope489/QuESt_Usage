@@ -1,18 +1,18 @@
 [
     {
         "referrer": "sandia.gov",
-        "count": 342,
-        "uniques": 60
+        "count": 374,
+        "uniques": 72
     },
     {
         "referrer": "Google",
-        "count": 309,
-        "uniques": 129
+        "count": 407,
+        "uniques": 160
     },
     {
         "referrer": "github.com",
-        "count": 276,
-        "uniques": 54
+        "count": 305,
+        "uniques": 66
     },
     {
         "referrer": "u-cursos.cl",
@@ -31,28 +31,28 @@
     },
     {
         "referrer": "opensustain.tech",
-        "count": 2,
-        "uniques": 2
-    },
-    {
-        "referrer": "Bing",
-        "count": 26,
-        "uniques": 6
-    },
-    {
-        "referrer": "energy.gov",
         "count": 3,
         "uniques": 3
     },
     {
+        "referrer": "Bing",
+        "count": 62,
+        "uniques": 9
+    },
+    {
+        "referrer": "energy.gov",
+        "count": 4,
+        "uniques": 4
+    },
+    {
         "referrer": "statics.teams.cdn.office.net",
-        "count": 2,
-        "uniques": 2
+        "count": 4,
+        "uniques": 4
     },
     {
         "referrer": "yandex.by",
-        "count": 2,
-        "uniques": 1
+        "count": 4,
+        "uniques": 2
     },
     {
         "referrer": "DuckDuckGo",
@@ -61,6 +61,11 @@
     },
     {
         "referrer": "puspalhazra.com",
+        "count": 2,
+        "uniques": 2
+    },
+    {
+        "referrer": "puspalhazra.info",
         "count": 1,
         "uniques": 1
     }
