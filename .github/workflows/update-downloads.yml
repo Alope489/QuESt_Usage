@@ -1,7 +1,7 @@
 name: Update Downloads
 on:
   schedule:
-    - cron: '0 * * * *' # Run every hour
+    - cron: '0 0 * * *' # Run daily at midnight
   push:
     branches:
       - main
