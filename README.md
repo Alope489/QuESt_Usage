@@ -2,20 +2,14 @@
 
 ![Downloaded](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/badge_data.json)
 ![Latest Release](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/release_badge_data.json)
-[![License](https://img.shields.io/github/sandialabs/snl-quest.svg)](./LICENSE)
+[![License](https://img.shields.io/github/sandialabs/snl-quest.svg)](LICENSE)
 
 [![License](https://img.shields.io/github/license/sandialabs/snl-quest.svg)](./LICENSE)
 [![Build Status](https://github.com/sandialabs/snl-quest/actions/workflows/build.yml/badge.svg)](https://github.com/sandialabs/snl-quest/actions)
 [![Coverage Status](https://coveralls.io/repos/github/sandialabs/snl-quest/badge.svg?branch=main)](https://coveralls.io/github/sandialabs/snl-quest?branch=main)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/sandialabs/snl-quest)](https://github.com//sandialabs/snl-quest/releases)
-[![Dependencies](https://img.shields.io/librariesio/github/your-username/your-repo)](https://libraries.io/github/your-username/your-repo)
-[![Downloads](https://img.shields.io/pypi/dm/your-package)](https://pypi.org/project/your-package/)
-[![GitHub issues](https://img.shields.io/github/issues/your-username/your-repo)](https://github.com/your-username/your-repo/issues)
-[![GitHub forks](https://img.shields.io/github/forks/your-username/your-repo)](https://github.com/your-username/your-repo/network)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/your-repo)](https://github.com/your-username/your-repo/stargazers)
-[![GitHub contributors](https://img.shields.io/github/contributors/your-username/your-repo)](https://github.com/your-username/your-repo/graphs/contributors)
-[![Twitter](https://img.shields.io/twitter/follow/your-twitter-handle?style=social)](https://twitter.com/your-twitter-handle)
-[![Maintainability](https://api.codeclimate.com/v1/badges/your-badge-id/maintainability)](https://codeclimate.com/github/your-username/your-repo/maintainability)
+[![Dependencies](https://img.shields.io/librariesio/github//sandialabs/snl-quest)](https://libraries.io/github//sandialabs/snl-quest)
+
 
 
 A program used to update the README.md on the main quest github page and keep track of all of the clones, most visited paths, main referrers, and the downloads of the releases.
