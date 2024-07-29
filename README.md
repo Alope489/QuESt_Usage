@@ -2,11 +2,6 @@
 
 ![Downloaded](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/badge_data.json)
 ![Latest Release](https://img.shields.io/endpoint?url=https://alope489.github.io/shields/release_badge_data.json)
-[![License](https://img.shields.io/github/sandialabs/snl-quest.svg)](LICENSE)
-
-[![License](https://img.shields.io/github/license/sandialabs/snl-quest.svg)](./LICENSE)
-[![Build Status](https://github.com/sandialabs/snl-quest/actions/workflows/build.yml/badge.svg)](https://github.com/sandialabs/snl-quest/actions)
-[![Coverage Status](https://coveralls.io/repos/github/sandialabs/snl-quest/badge.svg?branch=main)](https://coveralls.io/github/sandialabs/snl-quest?branch=main)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/sandialabs/snl-quest)](https://github.com//sandialabs/snl-quest/releases)
 [![Dependencies](https://img.shields.io/librariesio/github/sandialabs/snl-quest)](https://libraries.io/github/sandialabs/snl-quest)
 
