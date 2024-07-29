@@ -12,6 +12,7 @@ def replace_between_markers(content, start_marker, end_marker, replacement):
     start_index = content.find(start_marker)
     end_index = content.find(end_marker)
     if start_index == -1 or end_index == -1:
+        print(f"Markers not found in the file: {start_marker} or {end_marker}")
         return content
     start_index += len(start_marker)
     return content[:start_index] + '\n' + replacement + '\n' + content[end_index:]
@@ -19,12 +20,23 @@ def replace_between_markers(content, start_marker, end_marker, replacement):
 def update_readme(readme_path, plot_path, downloads_md_path, paths_md_path, referrers_md_path):
     # Read the README.md file
     readme_content = read_file(readme_path)
+    print("Original README Content:")
+    print(readme_content[:500])  # Print the first 500 characters for brevity
 
     # Read the plot and markdown table files
     plot_url = f'![Clones Plot](plots/clones_plot.png)'
     downloads_md = read_file(downloads_md_path)
     paths_md = read_file(paths_md_path)
     referrers_md = read_file(referrers_md_path)
+
+    print("Downloads Table Content:")
+    print(downloads_md)
+
+    print("Paths Table Content:")
+    print(paths_md)
+
+    print("Referrers Table Content:")
+    print(referrers_md)
 
     # Update plot section
     readme_content = replace_between_markers(
@@ -58,6 +70,9 @@ def update_readme(readme_path, plot_path, downloads_md_path, paths_md_path, refe
         referrers_md
     )
 
+    print("Updated README Content:")
+    print(readme_content[:500])  # Print the first 500 characters for brevity
+
     # Write the updated content back to the README.md file
     write_file(readme_path, readme_content)
 
@@ -77,5 +92,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
