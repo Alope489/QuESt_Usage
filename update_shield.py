@@ -79,8 +79,19 @@ print(f'Total Clones: {total_clones}')
 print(f'Total Downloads: {total_downloads}')
 print(f'Latest Release: {latest_release_tag}')
 
-# Prepare the output data for the shields
+# Calculate the combined total
+combined_total = total_clones + total_downloads
+
+# Prepare the output data for the summed downloads and clones
 output_data = {
+    "schemaVersion": 1,
+    "label": "Downloaded",
+    "message": str(combined_total),
+    "color": "blue"
+}
+
+# Prepare the output data for the latest release clones
+release_output_data = {
     "schemaVersion": 1,
     "label": f"{latest_release_tag} clones",
     "message": str(total_clones),
@@ -95,14 +106,7 @@ try:
 except Exception as e:
     print(f"Error writing to {output_file_path}: {e}")
 
-# Optionally, prepare the release data to release_badge_data.json (if needed)
-release_output_data = {
-    "schemaVersion": 1,
-    "label": "Latest Release",
-    "message": latest_release_tag,
-    "color": "green"
-}
-
+# Write the release clones data to release_badge_data.json
 try:
     with open(release_output_file_path, 'w') as output_file:
         json.dump(release_output_data, output_file)
