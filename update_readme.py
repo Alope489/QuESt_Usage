@@ -8,6 +8,14 @@ def write_file(filepath, content):
     with open(filepath, 'w') as file:
         file.write(content)
 
+def replace_between_markers(content, start_marker, end_marker, replacement):
+    start_index = content.find(start_marker)
+    end_index = content.find(end_marker)
+    if start_index == -1 or end_index == -1:
+        return content
+    start_index += len(start_marker)
+    return content[:start_index] + '\n' + replacement + '\n' + content[end_index:]
+
 def update_readme(readme_path, plot_path, downloads_md_path, paths_md_path, referrers_md_path):
     # Read the README.md file
     readme_content = read_file(readme_path)
@@ -17,14 +25,6 @@ def update_readme(readme_path, plot_path, downloads_md_path, paths_md_path, refe
     downloads_md = read_file(downloads_md_path)
     paths_md = read_file(paths_md_path)
     referrers_md = read_file(referrers_md_path)
-
-    # Function to replace content between markers
-    def replace_between_markers(content, start_marker, end_marker, replacement):
-        start_index = content.find(start_marker) + len(start_marker)
-        end_index = content.find(end_marker)
-        if start_index == -1 or end_index == -1:
-            return content
-        return content[:start_index] + '\n' + replacement + '\n' + content[end_index:]
 
     # Update plot section
     readme_content = replace_between_markers(
@@ -77,4 +77,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
