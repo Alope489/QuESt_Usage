@@ -46,4 +46,4 @@ jobs:
           exit 0
         fi
         git commit -m "Update download statistics and release information"
-        git push origin main
+        git push --force origin main
