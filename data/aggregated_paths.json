@@ -1,8 +1,8 @@
 [
     {
         "path": "/sandialabs/snl-quest",
-        "count": 777,
-        "uniques": 426
+        "count": 898,
+        "uniques": 488
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries/data_manager/es_gui/apps/data_manager",
@@ -26,8 +26,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/docs",
-        "count": 60,
-        "uniques": 17
+        "count": 76,
+        "uniques": 22
     },
     {
         "path": "/sandialabs/snl-quest/issues/48",
@@ -41,8 +41,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master",
-        "count": 81,
-        "uniques": 33
+        "count": 104,
+        "uniques": 37
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/README.md",
@@ -51,8 +51,8 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries",
-        "count": 75,
-        "uniques": 19
+        "count": 103,
+        "uniques": 24
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/resources_rc.py",
@@ -66,13 +66,13 @@
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/data",
-        "count": 88,
-        "uniques": 25
+        "count": 130,
+        "uniques": 32
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/app",
-        "count": 79,
-        "uniques": 21
+        "count": 103,
+        "uniques": 27
     },
     {
         "path": "/sandialabs/snl-quest/blob/master/images/read/home_page.png",
@@ -96,17 +96,22 @@
     },
     {
         "path": "/sandialabs/snl-quest/issues",
-        "count": 21,
-        "uniques": 3
+        "count": 46,
+        "uniques": 7
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/snl_libraries/data_manager",
-        "count": 21,
-        "uniques": 3
+        "count": 45,
+        "uniques": 7
     },
     {
         "path": "/sandialabs/snl-quest/tree/master/data/SPP",
-        "count": 16,
-        "uniques": 4
+        "count": 30,
+        "uniques": 8
+    },
+    {
+        "path": "/sandialabs/snl-quest/tree/master/plots",
+        "count": 13,
+        "uniques": 5
     }
 ]
