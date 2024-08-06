@@ -56,6 +56,8 @@ else:
         print(f"Error reading {downloads_file_path}: {e}")
 
 # Fetch the latest release from the foreign repository
+#/sandialabs/snl-quest
+
 OWNER = "sandialabs"
 REPO = "snl-quest"
 GITHUB_API_URL = f"https://api.github.com/repos/{OWNER}/{REPO}/releases/latest"
@@ -85,7 +87,7 @@ combined_total = total_clones + total_downloads
 # Prepare the output data for the summed downloads and clones
 output_data = {
     "schemaVersion": 1,
-    "label": "Downloaded",
+    "label": "Downloads",
     "message": str(combined_total),
     "color": "blue"
 }
@@ -93,7 +95,7 @@ output_data = {
 # Prepare the output data for the latest release clones
 release_output_data = {
     "schemaVersion": 1,
-    "label": f"{latest_release_tag} clones",
+    "label": f"v2.0 clones",
     "message": str(total_clones),
     "color": "blue"
 }
