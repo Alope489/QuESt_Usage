@@ -19,13 +19,13 @@ It provides tables and charts for the visits and the totals and updates the read
 |:------------------------------|-----------------:|
 | quest_apps_prebuilt_win64.zip |               12 |
 | quest_installer_win64.exe     |               30 |
-| quest_prebuilt_win64.zip      |               25 |
+| quest_prebuilt_win64.zip      |               26 |
 | QuESt.1.6-beta.zip            |              394 |
 | snl-quest-1.2.f-win10.zip     |              742 |
 | snl-quest-1.2.e-win10.zip     |              197 |
 | snl-quest-1.2.d-win10.zip     |              111 |
 | snl-quest-1.2.c-win10.zip     |               86 |
-| Total                         |             1597 |
+| Total                         |             1598 |
 <!-- TABLE_DOWNLOADS_PLACEHOLDER_END -->
 
 <!-- TABLE_PATHS_PLACEHOLDER_START -->
