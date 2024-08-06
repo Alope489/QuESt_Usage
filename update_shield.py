@@ -97,7 +97,7 @@ release_output_data = {
     "schemaVersion": 1,
     "label": f"v2.0 clones",
     "message": str(total_clones),
-    "color": "blue"
+    "color": "purple"
 }
 
 # Write the output data to badge_data.json
