@@ -1,0 +1,53 @@
+name: Update README in snl-quest
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout this repository
+      uses: actions/checkout@v2
+      with:
+        repository: user/repo
+        path: repo1
+
+    - name: Checkout snl-quest repository
+      uses: actions/checkout@v2
+      with:
+        repository: sandialabs/snl-quest
+        ref: usage_analytics
+        path: repo2
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install dependencies
+      run: pip install requests matplotlib pandas tabulate
+
+    - name: Run update script
+      working-directory: repo1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        QUEST_TOKEN: ${{ secrets.QUEST_TOKEN }}
+      run: python update_readme.py
+
+    - name: Copy updated README to snl-quest
+      run: cp repo1/README.md repo2/README.md
+
+    - name: Commit changes
+      working-directory: repo2
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add README.md
+        git commit -m "Automated update of README"
+        git push origin usage_analytics
